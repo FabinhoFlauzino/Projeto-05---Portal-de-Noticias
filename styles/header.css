@@ -22,3 +22,26 @@
   border-inline: none;
   justify-content: space-between;
 }
+
+@media (max-width: 768px) {
+  #primary {
+    padding-block: 16px;
+
+    div {
+      gap: 4px;
+    }
+
+    div:nth-child(3){
+      & strong {
+        display: none;
+      }
+    }
+  }
+
+  #secondary {
+    padding-block: 12px;
+    white-space: nowrap;
+    gap: 2rem;
+    overflow-x: scroll;
+  }
+}
